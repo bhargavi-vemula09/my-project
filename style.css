@@ -1,0 +1,142 @@
+/* LOGIN PAGE */
+
+.login-body {
+    background: linear-gradient(to right, #ff8c5a, #ff5e2d);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #ff6f3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* HOME PAGE */
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #fff8f3;
+    transition: 0.3s;
+}
+
+.dark {
+    background: #222;
+    color: white;
+}
+
+header {
+    background: #ff6f3c;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.darkBtn,
+.cartBtn {
+    background: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cartBtn span {
+    background: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* CART SIDEBAR */
+
+.cartBox {
+    position: fixed;
+    right: -350px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: white;
+    padding: 20px;
+    box-shadow: -5px 0 12px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.cartBox h2 {
+    text-align: center;
+}
+
+.cartBox.open {
+    right: 0;
+}
+
+.closeBtn {
+    width: 100%;
+    padding: 10px;
+    background: #ff6f3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
